@@ -1,85 +1,137 @@
-<!DOCTYPE<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="so">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hamar Shood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamar Shood Fast Food</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #ffffff; font-family: Arial, sans-serif; overflow-x: hidden; width: 100%; }
-        .main-container { width: 100%; padding-bottom: 40px; }
-        .horseed-style-banner { width: 100%; background-color: #0f1c3f; color: #ffffff; border-top: 5px solid #f5a623; border-bottom: 5px solid #f5a623; padding: 25px 10px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        .banner-main-title { font-size: 32px; font-weight: 900; color: #ffffff; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 2px; }
-        .banner-subtitle { background-color: #f5a623; color: #0f1c3f; font-size: 11px; font-weight: bold; padding: 4px 20px; display: inline-block; border-radius: 20px; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 1px; }
-        .banner-food-row { display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; width: 100%; overflow: hidden; padding: 0 4px; }
-        .banner-food-circle { width: 62px; height: 62px; border-radius: 50%; border: 2.5px solid #f5a623; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.4); }
-        .banner-food-circle img { width: 100%; height: 100%; object-fit: cover; }
-        .banner-phone-row { font-size: 14px; font-weight: bold; color: #f5a623; border-top: 1px dashed rgba(255,255,255,0.2); padding-top: 12px; display: flex; justify-content: center; gap: 15px; }
-        .luxury-welcome-box { background: #fafafa; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; margin: 15px 12px; text-align: center; }
-        .luxury-welcome-box h2 { font-size: 22px; color: #a20042; margin-bottom: 10px; font-weight: 800; }
-        .luxury-welcome-box p { font-size: 14px; color: #475569; line-height: 1.6; }
-        .page-padding { padding: 0 12px; }
-        .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
-        .menu-card { border: 1px solid #edf2f7; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-        .menu-card img { width: 100%; height: 85px; object-fit: cover; }
-        .menu-card p { font-size: 11px; font-weight: bold; color: #a20042; padding: 6px 2px; text-align: center; background: #faf5f7; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+            text-align: center;
+        }
+        .bismillah {
+            color: #800020;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        /* Qaybta Boorkii Hore ee Buluugga ahaa */
+        .old-header {
+            background-color: #0d1b3e;
+            color: white;
+            padding: 20px 10px;
+        }
+        .old-header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        .old-header .subtitle {
+            background-color: #f5a623;
+            color: #0d1b3e;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        /* Qoraalka Soo Dhaweynta */
+        .welcome-section {
+            background: white;
+            border: 1px solid #f0f0f0;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 90%;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+        }
+        .welcome-title {
+            color: #c00000;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .welcome-text {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        /* Boorkaaga Cusub */
+        .main-banner {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        /* Qaybta Cuntooyinka Hoose */
+        .menu-container {
+            max-width: 95%;
+            margin: 20px auto;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .menu-item {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 15px;
+            width: 48%;
+            overflow: hidden;
+            border: 1px solid #f1f1f1;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+        .item-name {
+            font-weight: bold;
+            font-size: 14px;
+            padding: 8px 0;
+            margin: 0;
+            color: #c00000;
+            background-color: #fff5f5;
+        }
     </style>
 </head>
 <body>
 
-    <div class="main-container">
-        
-        <div style="text-align:center; padding:15px 12px 5px 12px; font-size:20px; font-weight:bold; color:#a20042; font-family:'Times New Roman', serif;">
-            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
-        </div>
+    <!-- 1. Qoraalka Bismillah -->
+    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
 
-        <div class="horseed-style-banner">
-            <div class="banner-main-title">HAMAR SHOOD</div>
-            <div class="banner-subtitle">FAST FOOD & SWEETS</div>
-            
-            <div class="banner-food-row">
-                <div class="banner-food-circle"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=150" alt="Burger"></div>
-                <div class="banner-food-circle"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=150" alt="Bariis"></div>
-                <div class="banner-food-circle"><img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=150" alt="Digaag"></div>
-                <div class="banner-food-circle"><img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?q=80&w=150" alt="Sambuus"></div>
-                <div class="banner-food-circle"><img src="https://images.unsplash.com/photo-1498654896293-37aaea113fd9?q=80&w=150" alt="Kalluun"></div>
-            </div>
-            
-            <div class="banner-phone-row">
-                <span>📞 61 5 77 33 44</span>
-                <span>📞 62 5 56 60 83</span>
-            </div>
-        </div>
+    <!-- 2. Boorkii Hore ee Buluugga ahaa -->
+    <div class="old-header">
+        <h1>HAMAR SHOOD</h1>
+        <div class="subtitle">FAST FOOD & SWEETS</div>
+    </div>
 
-        <div class="luxury-welcome-box">
-            <h2>✨ Dhadhan Reer Xamar ✨</h2>
-            <p>Ku soo dhowaada maqaayada Hamar Shood! Waxaan maalin kasta si heersare ah kuugu diyaarinaa cuntooyinka aad jeceshahay oo leh dhadhan gaar ah iyo nadiifnimo buuxda. Booqashadaadu waa noo sharaf!</p>
-        </div>
+    <!-- 3. Qoraalka Soo Dhaweynta (Hadda waa kan soo hormaray sxb!) -->
+    <div class="welcome-section">
+        <div class="welcome-title">✨ Dhadhan Reer Xamar ✨</div>
+        <p class="welcome-text">
+            Ku soo dhowaada maqaayada Hamar Shood! Waxaan maalin kasta si heersare ah kuugu diyaarinaa cuntooyinka aad jeceshahay oo leh dhadhan gaar ah iyo nadiifnimo buuxda. Booqashadaadu waa noo sharaf!
+        </p>
+    </div>
 
-        <div class="page-padding">
-            <div class="menu-grid">
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=300" alt="Burger">
-                    <p>🔥 Burger</p>
-                </div>
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=300" alt="Bariis">
-                    <p>🍛 Bariis</p>
-                </div>
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=300" alt="Digaag">
-                    <p>🍗 Digaag</p>
-                </div>
-                
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?q=80&w=300" alt="Sambuus">
-                    <p>📐 Sambuus</p>
-                </div>
-                
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=300" alt="Baasto">
-                    <p>🍝 Baasto</p>
-                </div>
-                
+    <!-- 4. Boorkaaga Cusub (Midka sawirka 1000121703.jpg ku jira oo ku xiga qoraalka) -->
+    <img src="Add a heading_20260623_003800_0000.png" class="main-banner" alt="Hamar Shood Fast Food">
 
-                
+    <!-- 5. Qaybta Cuntooyinka Hoose -->
+    <div class="menu-container">
+        <div class="menu-item"><img src="burger.jpg" alt="Burger"><p class="item-name">🔥 Burger</p></div>
+        <div class="menu-item"><img src="bariis.jpg" alt="Bariis"><p class="item-name">🍚 Bariis</p></div>
+        <div class="menu-item"><img src="digaag.jpg" alt="Digaag"><p class="item-name">🍗 Digaag</p></div>
+        <div class="menu-item"><img src="sambuus.jpg" alt="Sambuus"><p class="item-name">📐 Sambuus</p></div>
+        <div class="menu-item"><img src="baasto.jpg" alt="Baasto"><p class="item-name">🍝 Baasto</p></div>
+    </div>
+
+</body>
+</html>
